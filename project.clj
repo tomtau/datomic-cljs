@@ -1,13 +1,13 @@
-(defproject com.zachallaun/datomic-cljs "0.0.1-alpha-1"
+(defproject tomtau/datomic-cljs "0.0.1-alpha-1"
   :description "Datomic REST client for ClojureScript"
   :url "https://github.com/zachallaun/datomic-cljs"
   :license {:name "MIT" :url "http://opensource.org/licenses/MIT"}
 
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-2069"]
-                 [org.clojure/core.async "0.1.256.0-1bf8cf-alpha"]]
+  :dependencies [[org.clojure/clojure "1.7.0"]
+                 [org.clojure/clojurescript "0.0-3308"]
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]]
 
-  :profiles {:dev {:plugins [[lein-cljsbuild "1.0.0"]]}}
+  :profiles {:dev {:plugins [[lein-cljsbuild "1.1.3"]]}}
 
   :cljsbuild {:builds {:test
                        {:source-paths ["src" "test"]
